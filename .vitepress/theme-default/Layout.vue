@@ -63,7 +63,7 @@
           @click="modeSelect('theme themeDark')"
           :class="themeMode !== 'theme' ? 'active' : ''"
         >
-          🌑
+          🌙
         </li>
       </ul>
     </div>
@@ -312,6 +312,6 @@
     border: 1px solid var(--border-color);
   }
   .active {
-    background-color: antiquewhite;
+    background-color: #00c8c8;
   }
 </style>

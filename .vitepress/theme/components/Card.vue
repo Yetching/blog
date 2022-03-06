@@ -96,7 +96,7 @@
     }
   }
   .console {
-    height: 20px;
+    height: 30px;
     padding: 8px 12px;
     background-color: #e3e3e3;
     border-radius: 12px 12px 0 0;
@@ -197,8 +197,8 @@
   }
   .card-title > img {
     max-width: 100%;
-    border-radius: 12px 12px 0 0;
-    cursor: auto;
+    border-radius: 12px;
+    cursor: pointer;
   }
   .social {
     display: flex;
@@ -237,6 +237,7 @@
     padding: 6px 10px;
     background-color: var(--p-code);
     border-radius: 4px;
+    cursor: pointer;
   }
   @media screen and (max-width: 1200px) {
     .card {

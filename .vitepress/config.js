@@ -35,9 +35,21 @@ async function getConfig() {
       nav: [
         { text: '🏠 首页', link: '/index' },
         { text: '📅 归档', link: '/more/docs' },
-        { text: '📂 分类', link: '/more/tags' },
-        { text: '👫 友情链接', link: '/more/Friendship' },
-        { text: '🐶 舔狗语录', link: '/more/dog' },
+        { text: '🏷️ 标签', link: '/more/tags' },
+        {
+          text: '📁 资源',
+          items: [
+            {
+              text: '🐶 舔狗语录',
+              link: '/more/dog',
+            },
+            {
+              text: '📖 书籍推荐',
+              link: '/more/book',
+            },
+          ],
+        },
+        { text: '🔧 关于', link: '/more/about' },
       ],
     },
     dest: 'public',

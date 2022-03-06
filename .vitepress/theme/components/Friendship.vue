@@ -1,46 +1,58 @@
 <template>
   <div class="Friendship">
-      <a :href="item.link" v-for="(item,index) in FriendshipData" :key="index + item.link" target="_blank" rel="noopener noreferrer">
-          <!-- <img :src="item.imgUrl" > -->
-          <div class="img-div" :style="{background:'url('+ item.imgUrl +') center center / cover no-repeat'}"></div>
-          <div class="introduce">
-            <p class="nickName">{{item.nickName}}</p>
-            <p>{{item.introduce}}</p>
-          </div>
-      </a>
+    <a
+      :href="item.link"
+      v-for="(item, index) in FriendshipData"
+      :key="index + item.link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <!-- <img :src="item.imgUrl" > -->
+      <div
+        class="img-div"
+        :style="{
+          background:
+            'url(' + item.imgUrl + ') center center / cover no-repeat',
+        }"
+      ></div>
+      <div class="introduce">
+        <p class="nickName">{{ item.nickName }}</p>
+        <p>{{ item.introduce }}</p>
+      </div>
+    </a>
   </div>
 </template>
 
 <script>
-import img from '../../images/t.png'
-export default {
-    data(){
-        return{
-            img,
-            FriendshipData:[]
-        }
+  import img from '../../images/t.png';
+  export default {
+    data() {
+      return {
+        img,
+        FriendshipData: [],
+      };
     },
-    mounted(){
-        // axios.post('http://42.193.173.48:3000/api/friendship/list',{
-        //         "type":'pass'
-        // })
-        // .then( (response)=> {
-        //    this.FriendshipData = response.data.data;
-        // })
-        // .catch( (error) =>{
-        //     console.log(error);
-        // });
-    }
-};
+    mounted() {
+      // axios.post('http://42.193.173.48:3000/api/friendship/list',{
+      //         "type":'pass'
+      // })
+      // .then( (response)=> {
+      //    this.FriendshipData = response.data.data;
+      // })
+      // .catch( (error) =>{
+      //     console.log(error);
+      // });
+    },
+  };
 </script>
 <style scoped>
-.Friendship{
+  .Friendship {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin-top: 20px;
-}
-.Friendship a{
-    text-decoration:none;
+  }
+  .Friendship a {
+    text-decoration: none;
     display: block;
     background: var(--header-color);
     width: 320px;
@@ -52,23 +64,23 @@ export default {
     border: 1px solid var(--border-color);
     position: relative;
     top: 0;
-    transition: all .2s;
-}
-.Friendship a:hover{
+    transition: all 0.2s;
+  }
+  .Friendship a:hover {
     top: -5px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
-.Friendship .img-div {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  .Friendship .img-div {
     min-width: 60px;
     height: 60px;
     margin: 0 10px;
     border-radius: 50%;
     cursor: pointer;
-}
-.introduce{
+  }
+  .introduce {
     flex: 1;
-}
-.introduce p {
+  }
+  .introduce p {
     margin: 0;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -76,10 +88,10 @@ export default {
     flex: 1;
     width: 14em;
     color: var(--text-color);
-}
-.nickName{
+  }
+  .nickName {
     font-weight: 600;
     font-size: 18px;
     color: var(--title-color);
-}
+  }
 </style>

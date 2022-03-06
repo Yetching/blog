@@ -2,29 +2,29 @@
   <div class="">
     <div class="years" v-for="(year, index) in data" :key="index + year">
       <div class="year">
-        {{ year[0].frontMatter.date.split("-")[0] }}
+        {{ year[0].frontMatter.date.split('-')[0] }}
       </div>
       <a
         v-show="!article.frontMatter.home"
-        :href=" base + article.regularPath || ''"
+        :href="base + article.regularPath || ''"
         v-for="(article, el) in year"
         :key="el"
         class="article"
       >
         <div class="title">
-          {{ article.frontMatter.title || "" }}
+          {{ article.frontMatter.title || '' }}
         </div>
-        <div class="date">{{ article.frontMatter.date.slice(5) || "" }}</div>
+        <div class="date">{{ article.frontMatter.date.slice(5) || '' }}</div>
       </a>
     </div>
   </div>
 </template>
 
 <script>
-  import { defineComponent, computed } from "vue";
-  import { withBase, useYearSort } from "../../theme-default/utils";
-  import { usePageData, useSiteData } from "vitepress";
-  import { base } from '../../build'
+  import { defineComponent, computed } from 'vue';
+  import { withBase, useYearSort } from '../../theme-default/utils';
+  import { usePageData, useSiteData } from 'vitepress';
+  import { base } from '../../build';
 
   export default defineComponent({
     setup() {
@@ -36,9 +36,9 @@
 
       return {
         data,
-        base
+        base,
       };
-    }
+    },
   });
 </script>
 
@@ -65,15 +65,15 @@
     align-items: center;
   }
   .title {
-      color: var(--accent-color);
+    color: var(--accent-color);
     font-size: 1.1rem;
   }
   .date {
     color: #ccc;
     font-size: 1rem;
   }
-  
-    @media screen and (max-width: 700px) {
+
+  @media screen and (max-width: 700px) {
     .header {
       font-size: 1.5rem;
     }
@@ -84,9 +84,9 @@
     .title {
       font-size: 0.9rem;
     }
-    .title{
+    .title {
       overflow: hidden;
-      text-overflow:ellipsis;
+      text-overflow: ellipsis;
       white-space: nowrap;
     }
   }
