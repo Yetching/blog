@@ -220,7 +220,7 @@
   @media screen and (max-width: 1200px) {
     .content-bg,
     .home-bg {
-      height: 15rem !important;
+      height: 16rem !important;
     }
   }
   @keyframes typing {
@@ -237,7 +237,7 @@
   .content-bg h1 p {
     font: bold 200% Consolas, Monaco, monospace;
     border-right: 0.1em solid;
-    width: 15em;
+    width: 16em;
     /* width: 30ch; # of chars */
     margin: 2em 1em;
     white-space: nowrap;
@@ -254,7 +254,8 @@
     justify-content: center;
   }
   .content-bg h1 {
-    color: var(--content-bg-color);
+    /* color: var(--content-bg-color); */
+    color: #fff;
   }
   .content-bg h1 p {
     margin: 0;
@@ -273,6 +274,15 @@
     position: relative;
     overflow: hidden;
   }
+  /* .home-bg::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #101012;
+    position: absolute;
+    top: 0;
+    left: 0;
+  } */
   .home {
     display: flex !important;
   }
