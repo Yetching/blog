@@ -16,5 +16,8 @@
     "vitepress": "0.7.2"
   },
   "repository": "https://github.com/Yetching/blog.git",
-  "author": "Yetching <840850332@qq.com>"
+  "author": "Yetching <840850332@qq.com>",
+  "dependencies": {
+    "vue": "^3.2.47"
+  }
 }
