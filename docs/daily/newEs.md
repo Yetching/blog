@@ -21,5 +21,11 @@ describe: ES语法新特性
     ```
 - WeakMap 支持 Symbol 作为 key
 - 尾部查找
+
   - Array.findLast
   - Array.findLastIndex
+
+- 异常链
+  ```javascript
+  function willThrowError() {}
+  ```
