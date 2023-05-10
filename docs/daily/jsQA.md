@@ -3,7 +3,7 @@ date: 2023-05-04
 title: 【javascript QA】
 tags: 
 	- 杂项
-describe: js面面试答题
+describe: js面试答题
 ---
 
 ### javascript interview
@@ -33,4 +33,22 @@ const obj = new Person('Liu');
 const obj = new (function () {
   this.name = 'Liu';
 })();
+```
+
+#### watchEffect
+
+```javascript
+export default {
+  setup() {
+    watchEffect((onInvalidate) => {
+      // 异步 API 调用
+      const apiCall = someAsyncMethod(props.songID);
+
+      onInvalidate(() => {
+        // 取消 API 调用
+        apiCall.cancel();
+      });
+    });
+  },
+};
 ```

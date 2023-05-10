@@ -1,6 +1,6 @@
 <template>
   <div class="ooooo-wrapper">{{ transferStr }}</div>
-  <div class="ooooo-btn"></div>
+  <div class="ooooo-btn" @click="handleBtnClick">oooooGo</div>
 </template>
 
 <script setup lang="ts">
@@ -77,6 +77,10 @@ const Utf8ArrayToStr = (array) => {
   }
 
   return out;
+};
+
+const handleBtnClick = () => {
+  console.log('oooooGo');
 };
 </script>
 
