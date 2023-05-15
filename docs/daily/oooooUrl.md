@@ -11,6 +11,7 @@ describe: Url编码
 	import { ref } from 'vue'
 	import { usePageData } from 'vitepress'
 	import OooooUrl from '../../components/oooooUrl.vue'
+	// import OooooUrl from '@comp/oooooUrl.vue'
 	const a = ref(0)
 </script>
 
