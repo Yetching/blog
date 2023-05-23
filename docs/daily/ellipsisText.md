@@ -6,9 +6,9 @@ tags:
 describe: 文本溢出探索
 ---
 
-<script lang="ts" setup>
+<!-- <script lang="ts" setup>
   import ellipsisVue from '../../components/ellipsis.vue'
-</script>
+</script> -->
 
 #### text-overflow
 

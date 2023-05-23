@@ -7,19 +7,19 @@ tags:
 describe: Url编码
 ---
 
-<script setup>
+<!-- <script setup>
 	import { ref } from 'vue'
 	import { usePageData } from 'vitepress'
 	import OooooUrl from '../../components/oooooUrl.vue'
 	// import OooooUrl from '@comp/oooooUrl.vue'
 	const a = ref(0)
-</script>
-
+</script> -->
+<!--
 <pre>{{ usePageData() }}</pre>
 <p>{{ a }}</p>
 <button :class="$style.button">按钮 button</button>
 
-<OooooUrl></OooooUrl>
+<OooooUrl></OooooUrl> -->
 
 <style module>
 
