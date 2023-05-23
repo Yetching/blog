@@ -17,7 +17,11 @@ describe: 文本溢出探索
 #### white-space
 
 - 单行溢出
+
   - 末尾省略号
-    <ellipsis-vue></ellipsis-vue>
+    <ellipsis-vue :start-ellipsis-line="1" :suffix="true">
+    测试溢出文本测试溢出文本测试溢出文本测试溢出文本测试溢出文本测试溢出文本测试溢出文本
+    </ellipsis-vue>
   - 中间省略号
+
 - 多行溢出
